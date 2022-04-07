@@ -1,0 +1,189 @@
+<!DOCTYPE html>    
+<html>    
+<head>   
+<meta charset="utf-8">   
+<title> ONLINE EXAMINATION SYSTEM </title>   
+<style>
+    .login {
+        margin-top: 50px;
+    }
+table.table1 {
+    border-collapse: collapse;
+    text-decoration: none;
+    font-size: 120%;
+    padding: 50px;
+    float: right;
+    margin-top: 0px;
+    
+} 
+.lik {
+    text-decoration: none;
+}   
+Body {   
+    column-width: 680px; 
+  background-color: #f1f1f1; 
+}   
+h1{ 
+} 
+#bb{ 
+    color:red; 
+    background-color:lightblue; 
+} 
+button {    
+    background-color:rgb(65, 47, 233); 
+        color: white; 
+        border-radius: 10px; 
+        padding: 8px;    
+        margin: 10px 0px;    
+        border: none;    
+        cursor: pointer;    
+         }    
+ form {   
+      
+        border: 3px solid #f1f1f1;    
+    }    
+ input[type=text], input[type=password] {    
+        width: 100%;    
+        margin: 8px 0;   
+        padding: 12px 20px;    
+        display: inline-block;    
+        border: 2px solid green;    
+        box-sizing: border-box;    
+    }   
+ button:hover {    
+        opacity: 0.7;    
+    }    
+  .cancelbtn {    
+        width: auto;    
+        padding: 10px 18px;   
+        margin: 5px 5px;   
+    }    
+    #createacc {   
+        background-color: rgb(105, 204, 204); 
+        color: brown; 
+        width: auto;    
+        padding: 5px 5px;   
+        margin: 5px 5px;   
+    }    
+     
+         
+      
+ .container {    
+        padding: 25px;    
+        background-color: lightblue;   
+    }  
+    #createacc{ 
+        background-color:rgb(65, 47, 233); 
+        float: right; 
+        margin-right: 90px; 
+        color: white; 
+        border-radius: 10px; 
+ 
+ 
+    }  
+    #b{ 
+        margin-left: 90px; 
+ 
+    }  
+    #logg{ 
+        background-color:rgb(65, 47, 233); 
+        color: white; 
+        border-radius: 10px; 
+        padding: 8px;    
+        margin: 10px 0px;    
+        border: none;    
+        cursor: pointer;   
+ 
+    }  
+    
+#ll:active {
+  background-color: #90d6bd;
+  color: rgb(16, 2, 90);
+}
+</style>    
+</head>     
+<body style="background-color: rgb(207, 236, 236);">  
+    <fieldset > 
+    <table class = "table1" border="3">
+        <tr>
+            <th><a class="lik" href="homepage.html">&nbsp;&nbsp;&nbsp;Home&nbsp;&nbsp;&nbsp;</a></th>
+            <th><a id="ll" class="lik" href="#adda.html">&nbsp;&nbsp;&nbsp;login for exam&nbsp;&nbsp;&nbsp;</a></th>
+            <th><a class="lik" onclick="contacts()">&nbsp;&nbsp;&nbsp;Contact&nbsp;&nbsp;&nbsp;</a></th>
+            <th><a class="lik" href="#help">&nbsp;&nbsp;&nbsp;help&nbsp;&nbsp;&nbsp;</a></th>
+            <th><a class="lik" href="#about">&nbsp;&nbsp;&nbsp;About&nbsp;&nbsp;&nbsp;</a></th>
+        </tr>
+    </table>
+    <div class="login">
+
+      
+    
+        
+        <center> <h1> WELCOME TO ONLINE EXAMINATION SYSTEM  </h1> </center>    
+    <form  name = "myForm" action = "exam.html"  onsubmit = "return check()" method="post" style="width: 500px;margin-left: 400px; border-color: rgb(161, 161, 207);" >   
+        <div class="container">    
+            <label><b>Username : </b></label>
+            <input type="text" placeholder="Enter Username" name="username" >    
+               
+            <label><b>Password : </b></label>
+            <input type="password" placeholder="enter Password" name="password" >    
+               
+                      
+            <input id="logg" type="submit" value="log in"> 
+            <button type="clear"> clear</button>    
+            <br/>   
+            <input type="checkbox"> Remember me    
+            Forgot <a href="#"> password? </a>  
+            
+      
+        </div>    
+    </form>     
+<div id="bb">  
+    <button onclick="window.location.href='create.html'" id="createacc">create account</button> 
+ 
+</div> 
+ 
+    
+</div> 
+
+</fieldset> 
+
+    <script> 
+        function check() { 
+          let x = document.forms["myForm"]["username"].value; 
+          let y = document.forms["myForm"]["password"].value;
+          var student=new Array();
+              student[0]="addisu";
+              student[1]="1234";
+                var a=student[0];
+                var b=student[1];
+                       
+ 
+          if (x == ""||y==""||x!=a||y!=b) { 
+            
+            alert("please fill correct user info"); 
+            return false; 
+           
+            } }
+
+        function contacts(){ 
+                  document.write("<b><u>group members </u></b></br>");
+                  document.write(" 1)<a href ='mailto: addisuanley2010@gmail.com'> addisu   anley</a> <br>");
+
+                  document.write("2)<a href='mailto:hulunmenyew23@gmail.com'> aemro  enyew <br></a>");
+
+                  document.write("3)<a href='mailto:addisuaddaaa@gmail.com'> addisu  abebaw <br> </a>");
+                  document.write("4)<a href='mailto:haddisethiopia2021@gmail.com'> Addise   fanta <br></a>");
+
+     
+            
+                         }
+
+        </script>
+    
+        
+    
+     
+</body>      
+</html>
+
+            
